@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset ="utf-8">
+<title> test</title>
+<script src='lib.js'></script>
+<script>
+function strPad(input,fullLen,fillStr,fillType)
+{
+	if (fillType == 'FILL_LEFT')
+	{
+		var result = '';
+		var resLen = 0;
+		while(resLen<fullLen-input.length)
+		{
+			result += fillStr;
+			resLen = result.length;
+		}
+		result = result.slice (0,fullLen-input.length);
+		result = result +input;
+		return result;
+	}
+	else if (fillType == 'FILL_BOTH')
+	{
+		
+	}
+	else {
+	var result = input;
+	var resLen = 0;
+	while(resLen<fullLen)
+	{
+		result += fillStr;
+		resLen = result.length;
+	}
+	result = result.slice(0,fullLen);
+	return result;
+	}
+}
+var res =strPad('star',10,'*+&^','FILL_LEFT');
+console.log(res);
+</script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset ="Win1251">
+<title>test</title>
+<script>
+var book1 = {};
+book1.title = 'hovno';
+book1.pubYear = 1995;
+book1.price = 10.92;
+book1.show = function (){ console.log (this.title, this.price)}
+function showBook()
+{
+	console.log (this.title, this.price);
+}
+
+var book2 = { title: 'nono',pubYear: 1991, price: 5.93, show: showBook };
+
+book1.show();
+book2.show();
+/*for (var i in book1)
+{
+	console.log (i + ':'+book1[i]);
+}
+for (var i in book2)
+{
+	console.log (i + ':'+book2[i]);
+}*/
+
+</script>
+</head>
+<body></body>
+</html>

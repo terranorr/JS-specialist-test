@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset ="utf-8">
+<title>test</title>
+<script>
+
+
+var s = 'Мы знаем, что монохромный цвет это градации серого';
+var txt = 'на';
+var word;
+var idx = s.indexOf (txt);
+function findFirstSpaceIdx (str,id)
+{
+	for (i =id; i> 0;i-- )
+	{
+		if (str[i] == ' ')
+		return i;
+	}
+}
+function findLastSpaceIdx (str,id)
+{
+	for (i =id; i< str.length;i++ )
+	{
+		if (str[i] == ' ')
+		return i;
+	}
+}
+
+word = s.slice(findFirstSpaceIdx(s,idx),findLastSpaceIdx(s,idx));
+console.log (word);
+
+
+</script>
+</head>
+<body></body>
+</html>

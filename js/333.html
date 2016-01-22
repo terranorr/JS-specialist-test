@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset ="Win1251">
+<title>test</title>
+<script>
+var anm1 = 'dog';
+var anm2 = 'cat';
+var space = '\t';
+var lines = 25;
+var lineSize =6;
+var anm1num =3;
+var anm2num =2;
+//function lineDraw ( an1, an2, lnSz)
+{	
+	var curPos =1;
+	for (k=1;k<=lines;k++)
+	{	
+		var line = ''
+		for (i=1;i<=lineSize; i++)
+		{
+				if (curPos <=anm1num)
+				{	
+					line += anm1 + space;
+					curPos++;
+				}
+				else if (curPos <anm1num+anm2num)
+				{
+					line += anm2 + space;
+					curPos++;
+				}
+				else 
+				{
+					line += anm2 + space;
+					curPos =1;
+				}
+		}
+		console.log (line);
+}
+
+//return 
+}
+
+
+</script>
+</head>
+<body></body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset ="Win1251">
+<title>test</title>
+<script>
+function printNumbers (num,cols)
+{
+	var ROWS = (num - num%cols)/cols;
+	var output = '';
+	for (i =0;i<ROWS;i++)
+	{
+		var val = i;
+		for (j =0;j<cols;j++)
+		{
+			output +=val+ '\t';
+			 val+=ROWS;
+		}
+		console.log (output);
+		output ='';
+	}
+}
+	printNumbers (16,1);
+
+</script>
+</head>
+<body></body>
+</html>

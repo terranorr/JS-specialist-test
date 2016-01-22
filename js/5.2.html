@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset ="utf-8">
+<title>test</title>
+<script>
+
+
+function substrCount(inp,needle,offset,length)
+{
+	var input = inp.slice(0,length)
+	var idx =input.indexOf(needle,offset);
+	if (idx != -1)
+	{
+	if (length>inp.length) console.log('stroke ololo');
+		var count =0;
+		while(idx !=-1)
+		{
+			idx = input.indexOf(needle,idx+1);
+			count++
+						
+		}
+		return count;
+	}
+	
+	else return ('Ashibka');
+}
+console.log(substrCount('ромби бомби бомби бо','мби',0,300));
+</script>
+</head>
+<body></body>
+</html>
